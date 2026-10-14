@@ -16,6 +16,8 @@ return {
 
       -- Use traditional completion keys
       opts.keymap.preset = "default"
+      opts.keymap["<C-y>"] = false
+      opts.keymap["<S-CR>"] = { "accept", "fallback" }
 
       -- Don't automatically select or insert suggestions
       opts.completion.list = {
